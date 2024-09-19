@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Game Suwit</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body style="background-color: white-space: inherit;;">
+    <!-- Perkenalan -->
+    <section class="jumbotron">
+      <h2 class="display-5 text-center bg-body-tertiary">Game Suwit</h2>
+    </section>
+    <!-- Akhir Perkenalan -->
+
+    <!-- Papan Score -->
+    <section id="papanscore">
+            <div class="row text-center">
+                <h3>Papan Score</h3>
+              </div>
+            </div>
+            <div class="row justify-content-center fs-5 text text-dark text-center mb-3 ">
+              <div class="col-md-5 mb-4 bg-danger border border-danger">
+                <p>Score Komputer</p>
+                <div class="card">
+                <div id="scoreKomputer"> &ensp; 0</div>
+              </div>
+            </div>
+              <div class="col-md-5 mb-4 bg-danger border border-danger">
+                <p>Score Player</p>
+                <div class="card">
+                <div id="scorePlayer"> &ensp; 0 </div>
+              </div>
+            </div>
+            </div>
+          </div>
+    </section>
+    <!-- Papan Score Akhir -->
+
+    <section id="sectiona">
+        <div class="d-grid gap-2 col-6 mx-auto text text-center text-light bg-dark mb-3">
+            <h4>Area Komputer</h4>
+        </div>
+        <div class="container text-center">
+            <div class="row justify-content-center fs-5 text">
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                      <img src="img/batu.png" class="rounded-4 mx-auto d-block" style="width: 4rem" class="card-img-bottom" alt="batu"/>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+        </section>
+        <section id="sectionb">
+        <div class="d-grid gap-2 col-6 mx-auto text text-center text-light bg-dark mb-3">
+            <h4>Area Player</h4>
+        </div>
+            <div class="row justify-content-center fs-5 text">
+                <div class="col-md-1 mb-2 text-center ">
+                    <div class="card  rounded-4 mx-auto d-block">
+                      <img src="img/batu.png" class="batu" style="width: 4rem" class="card-img-top" alt="batu"/>
+                    </div>
+                  </div>
+            <div class="col-md-1 mb-2 text-center">
+                <div class="card rounded-4 mx-auto d-block">
+                  <img src="img/gunting.png" class="gunting" style="width: 3rem" alt="gunting" />
+                </div>
+              </div>
+        <div class="col-md-1 mb-2 text-center">
+            <div class="card rounded-4 mx-auto d-block ">
+              <img src="img/kertas.png" class="kertas"  style="width: 4rem" alt="kertas"/>
+            </div>
+          </div>
+      </div>
+    </div>
+</section>
+    <!-- papan info -->
+
+    <section>
+        <div class="d-grid gap-2 col-md-3 mx-auto text text-center text-light bg-danger border border-danger fs-5 mb-3">
+            <p>Anda !!!</p>
+            <div class="card">
+            <div id="info"></div>
+        </div> 
+    </div>         
+</section>
+    <!-- akhir papan info -->
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 justify-content-center text-center">
+            <div class="btn-group" role="group" aria-label="Button group">
+              <button type="button" class="btn btn-primary" onclick="location.reload();">Mulai Lagi?</button>
+              <button type="button" class="btn btn-danger" onclick="window.close();">keluar!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="gamesuit.js"></script>
+
+  </body>
+</html>
